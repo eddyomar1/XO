@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>...</title>
+
+<link  rel="icon" href="https://lh3.googleusercontent.com/proxy/N9V2L5TyOd7hSSXLsL4v78XB8g6qf-qn71MWoZT5_jH1marpskzweUAp4T29kusvkTCG7KJLkNZ7hTIqWkVj_A6zoJ_0yo6E7C1YBShrdQ76pnmBm30" type="image/png" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+
+<style>
+
+.es{width:30%; height:30%; background-color: aqua; display:inline-block;}
+
+#pk{width:1000px; height:900px; margin-left:auto; margin-right:auto;}
+
+/* @media screen {
+  
+  .es{width:30%; height:30%;}
+
+  #pk{width:100%; height:90%;}
+
+} */
+
+</style>
+
+
+</head>
+<body>
+
+  <br>
+  <br>
+  <br>
+<div id="pk">
+<div id="aa" class="es"></div>
+<div id="ab" class="es"></div>
+<div id="ac" class="es"></div>
+<div id="ba" class="es"></div>
+<div id="bb" class="es"></div>
+<div id="bc" class="es"></div>
+<div id="ca" class="es"></div>
+<div id="cb" class="es"></div>
+<div id="cc" class="es"></div>
+</div>
+
+
+<script>
+
+var aa = document.getElementById('aa');
+var ab = document.getElementById('ab');
+var ac = document.getElementById('ac');
+var ba = document.getElementById('ba');
+var bb = document.getElementById('bb');
+var bc = document.getElementById('bc');
+var ca = document.getElementById('ca');
+var cb = document.getElementById('cb');
+var cc = document.getElementById('cc');
+var pk = document.getElementById('pk');
+
+var op = [
+
+aa,
+ab,
+ac,
+ba,
+bb,
+bc,
+ca,
+cb,
+cc
+
+];
+
+var ap = [];
+
+op.forEach(ops => (op.se = false));
+
+
+aa.addEventListener('click', function(event){
+
+  if(op.includes(aa)){
+tp(aa); op.splice(op.indexOf(aa),1);
+}
+
+}
+
+);
+ab.addEventListener('click', function(event){
+
+  if(op.includes(ab))
+{tp(ab); op.splice(op.indexOf(ab),1);}
+}
+
+);
+ac.addEventListener('click', function(event){
+
+  if(op.includes(ac))
+{tp(ac); op.splice(op.indexOf(ac),1);}
+}
+
+);
+ba.addEventListener('click', function(event){
+if(op.includes(ba))
+{tp(ba); op.splice(op.indexOf(ba),1);}
+}
+
+);
+bb.addEventListener('click', function(event){
+if(op.includes(bb))
+{tp(bb); op.splice(op.indexOf(bb),1);}
+}
+
+);
+bc.addEventListener('click', function(event){
+if(op.includes(bc))
+{tp(bc); op.splice(op.indexOf(bc),1);}
+}
+
+);
+ca.addEventListener('click', function(event){
+if(op.includes(ca))
+{tp(ca); op.splice(op.indexOf(ca),1);}
+}
+
+);
+cb.addEventListener('click', function(event){
+if(op.includes(cb))
+{tp(cb); op.splice(op.indexOf(cb),1);}
+}
+
+);
+cc.addEventListener('click', function(event){
+if(op.includes(cc))
+{tp(cc); op.splice(op.indexOf(cc),1);}
+}
+
+);
+
+function tc(k){
+
+k.style.backgroundColor = 'blue';
+
+}
+
+function tp(k){
+
+k.style.backgroundColor = 'black';
+
+}
+
+
+
+pk.addEventListener('click', kk);
+
+
+
+
+function kk(){ 
+setTimeout(
+  function gg(){
+
+function mnf(por){return Math.floor(Math.random() * por);}
+
+var x = mnf(op.length+1);
+var y = op[x];
+
+  // for(var i=0;i<op.length;i++){
+
+
+    if(op.includes(y)){
+    tc(y);
+    op.splice(x,1);
+    }else if (op[0]==null) {
+
+      alert('fin del juego'); location.reload();
+
+    }else{/*alert('Algo paso ocurrio un error');*/ gg()}
+
+
+    // if(ap[i]==y || y.se==true){
+    // console.log(y);
+    //   break;
+    // }else{console.log('todo bien');}
+
+    }
+    
+    
+    
+  // }
+
+//   if(y.se==true){
+//   x=mnf(); 
+//   break;  
+// }
+
+  // tp(y);
+  // ap.push(y);
+  // y.se = true;
+  // console.log(y);
+
+// if(ap.length>9) {
+// setTimeout(ala, 10);
+// }
+
+
+, 500);}
+
+// function ala(){
+//   // alert("finish");
+//   clearInterval(kk);
+
+// }
+
+</script>
+
+</body>
+
+</html>
